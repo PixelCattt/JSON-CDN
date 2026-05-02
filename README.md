@@ -1,5 +1,15 @@
 # JSON-CDN
-A Simple Linux CDN Server that exposes a Directory Listing in JSON Format.
+A Simple Linux CDN Server in JSON Format.
+
+---
+
+## 🚀 Features
+
+- Browse Folders with URL Paths
+- Open Raw Files (Videos, Images, etc.)
+- JSON based Directory Listings
+- No Database Required
+- Lightweight and Fast
 
 ---
 
