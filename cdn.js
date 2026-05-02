@@ -8,9 +8,9 @@ const PORT = 8025;
 const ROOT = "/YOUR-PATH-HERE";
 
 function safePath(urlPath = "") {
-    const fullPath = path.join(ROOT, urlPath);
-    const normalized = path.normalize(fullPath);
-    if (!normalized.startsWith(ROOT)) return null;
+    const normalizedRoot = path.resolve(ROOT);
+    const normalized = path.resolve(fullPath);
+    if (!normalized.startsWith(normalizedRoot + path.sep)) return null;
     return normalized;
 }
 
