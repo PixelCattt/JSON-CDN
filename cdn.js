@@ -5,7 +5,7 @@ const fs = require("fs");
 const app = express();
 
 const PORT = 8025;
-const ROOT = "/home/YOUR-PATH-HERE";
+const ROOT = "/YOUR-PATH-HERE";
 
 function safePath(urlPath = "") {
     const fullPath = path.join(ROOT, urlPath);
