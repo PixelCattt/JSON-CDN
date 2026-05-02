@@ -9,7 +9,9 @@ const ROOT = "/YOUR-PATH-HERE";
 
 function safePath(urlPath = "") {
     const normalizedRoot = path.resolve(ROOT);
+    const fullPath = path.join(ROOT, urlPath);
     const normalized = path.resolve(fullPath);
+
     if (!normalized.startsWith(normalizedRoot + path.sep)) return null;
     return normalized;
 }
@@ -40,7 +42,7 @@ app.use((req, res) => {
 
     const items = fs.readdirSync(target, { withFileTypes: true });
     for (const item of items) {
-        const fullPath = urlPath ? `${urlPath}${item.name}` : item.name;
+        const fullPath = path.posix.join(urlPath, item.name);
 
         if (item.isDirectory()) {
             Folders.push({
