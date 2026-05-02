@@ -1,6 +1,6 @@
 {
   "name": "json-cdn",
-  "description": "A Simple Linux CDN Server that exposes a Directory Listing in JSON Format.",
+  "description": "A Simple Linux CDN Server in JSON Format.",
   "version": "1.0.0",
   "main": "cdn.js",
   "type": "commonjs",
