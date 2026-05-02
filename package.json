@@ -1,0 +1,16 @@
+{
+  "name": "json-cdn",
+  "description": "A Simple CDN Server that exposes a Directory Listing in JSON Format.",
+  "version": "1.0.0",
+  "main": "cdn.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node cdn.js"
+  },
+  "dependencies": {
+    "express": "^4.18.0"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
