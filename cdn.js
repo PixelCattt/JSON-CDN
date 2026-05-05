@@ -12,7 +12,7 @@ function safePath(urlPath = "") {
     const fullPath = path.join(ROOT, urlPath);
     const normalized = path.resolve(fullPath);
 
-    if (!normalized.startsWith(normalizedRoot + path.sep)) return null;
+    if (normalized !== normalizedRoot && !normalized.startsWith(normalizedRoot + path.sep)) return null;
     return normalized;
 }
 
